@@ -1,0 +1,51 @@
+<!-- <div>
+
+   <div  class="col-sm-2">Firstname : <div class="col-sm-3">{{profile.firstName}}</div></div>
+    {{profile.lastName}}
+    {{profile.gender}}
+    {{profile.phoneNumber}}
+    {{profile.email}}
+</div> -->
+
+
+
+<!-- <body id="s1"
+style=" background-image: url('/assets/image/cart.jpg'); background-repeat: no-repeat; background-size: cover;"> -->
+
+<body>
+        <h1 style="margin-left: 40px; text-shadow:2px 2px red;">My Profile</h1>
+       
+                    <img id="image" [src]="fetchimage(profile.profileImage)"
+                     style="width: 200px; height: 200px; border-radius: 50%; float: left;"> 
+                    
+                     <!-- <img src="data:image/png;base64, + {{profile.profileImage}} " /> -->
+        
+    <div>
+        <table class="table table-striped" style="float: right;">
+            <tbody>
+                <tr>
+                    <td id="td1">Firstname</td>
+                    <td>{{profile.firstName}}</td>
+                </tr>
+                <tr>
+                    <td id="td1">LastName</td>
+                    <td>{{profile.lastName}}</td>
+                </tr>
+                <tr>
+                    <td id="td1">Gender</td>
+                    <td>{{profile.genderName}}</td>
+                </tr>
+                <tr>
+                    <td id="td1">PhoneNumber</td>
+                    <td>{{profile.phoneNumber}}</td>
+                </tr>
+                <tr>
+                    <td id="td1">Email Id</td>
+                    <td>{{profile.email}}</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <input type="submit" value="BACK" (click)=back() style="background-color: transparent; color: black; font-weight: bold; width: 80px; height: 50px; margin-left: 1000px;margin-top: 50px;">
+</body>

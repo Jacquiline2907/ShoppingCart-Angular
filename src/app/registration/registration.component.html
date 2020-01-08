@@ -1,0 +1,95 @@
+<!-- id="s1"
+    style=" background-image: url('/assets/image/bg44.jpg'); background-repeat: no-repeat; background-size:cover;" -->
+
+<body style="background-color: rgb(196, 224, 236);">
+    <div class="container">
+        <form [formGroup]="registerForm"  (ngSubmit)="register()" style="font-weight: bold;margin:0px 30px;">
+
+            <div class="roles">
+                <label for="role"></label>
+                <div>
+                    <input class="form-contol" type="radio" formControlName="RoleKey" (click)=show() value=2
+                        ng-model="seller"> Seller
+                    <input class="form-contol" type="radio" formControlName="RoleKey" (click)=show() value=3
+                        ng-model="customer"> Customer
+                </div>
+            </div>
+
+
+            <div id="form1" ng-show="seller" [hidden]=!hide>
+                <div class="row">
+                    <label for="firstName" class="col-sm-3 col-form-label">FirstName</label>
+                    <div class="col-sm-3">
+                        <input class="form-contol" formControlName="FirstName" type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="lastName" class="col-sm-3 col-form-label">LastName</label>
+                    <div class="col-sm-3">
+                        <input class="form-contol" formControlName="LastName" type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="gender" class="col-sm-3 col-form-label">Gender</label>
+                    <div class="col-sm-3" style="font-size: 2em;">
+                        <input class="form-contol" type="radio" formControlName="GenderKey" value=1 > <a style="font-size: 1em;">Male</a>
+                        <input class="form-contol" type="radio" formControlName="GenderKey" value=2> Female
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="email" class="col-sm-3 col-form-label">Email</label>
+                    <div class="col-sm-3">
+                        <input class="form-contol" formControlName="Email" type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="phnnum" class="col-sm-3 col-form-label">Phone Number</label>
+                    <div class="col-sm-3">
+                        <input class="form-contol" formControlName="PhoneNumber" type="text">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="password" class="col-sm-3 col-form-label">Password</label>
+                    <div class="col-sm-3">
+                        <input class="form-contol" formControlName="Password" type="password">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="retypePassword" class="col-sm-3 col-form-label">Retype Password</label>
+                    <div class="col-sm-3">
+                        <input class="form-contol" formControlName="retypePassword" type="password">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <span class="col-sm-3 col-form-label" style="font-size: 15pt;">Profile Image</span>
+                    <input class="col-sm-3" id="image" type="file" accept="image/*" (change)=insertImage($event) />
+                </div>
+
+
+
+                <input  type="submit" value="submit"  style="background-color: transparent; font-size: 2em; margin-left: 450px; border-radius: 10%;">
+
+
+            </div>
+
+
+            <!--  (click)=showProducts() ng-model="AddSellerProducts"
+        <div class="row" ng-show="AddSellerProducts" [hidden]=!hide>
+            <label for="choice" class="col-sm-2 col-form-label">Do You want to Add Products now ?</label>
+            <div class="col-sm-3">
+                <input class="form-contol" type="radio" formControlName="choice" value="yes"> Yes
+                <input class="form-contol" type="radio" formControlName="choice" value="no"> No
+            </div>
+        </div> -->
+
+        </form>
+    </div>
+
+</body>

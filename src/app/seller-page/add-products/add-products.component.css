@@ -1,0 +1,29 @@
+.row{
+    margin:10px;
+}
+
+input{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+label{
+    font-size: 15pt;
+}
+
+.form-contol{
+    /* height: 3em; */
+    background-color:  rgb(196, 224, 236);
+    border-radius: 0px 10px;
+    font-size: 2em;
+}
+
+.col-form-label{
+    margin-top: 5px;
+}
+
+#image{
+    /* background-color:  rgb(196, 224, 236); */
+    /* border-radius: 0px 10px; */
+    font-size: 2em;
+}

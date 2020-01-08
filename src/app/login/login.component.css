@@ -1,0 +1,49 @@
+.row{
+    margin:10px;
+}
+
+.form-contol{
+    /* height: 3em; */
+    background-color:  rgb(196, 224, 236);
+    border-radius: 0px 10px;
+    font-size: 2em;
+}
+
+
+input{
+    margin-left: 10px;
+    background-color: rgb(233, 232, 162);
+    /* border: 2px solid green; */
+    
+   
+}
+form{
+    /* margin-top: 140px; */
+    margin-left: 350px;
+    margin-right: 250px;
+    border: 1px ridge black;
+    padding: 50px;
+    border-radius: 0% 30% ;
+}
+button{
+    background-color: transparent;
+    border: 2px solid green;
+    border-radius: 0px 10px;
+}
+/* 
+#s1{
+    height:100vh;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+   } */
+
+body .container{
+    padding-top: 50px;
+}   
+body{
+    width: 1365px;
+    height: 100vh;
+}
+label{
+    font-size: 2em;
+}

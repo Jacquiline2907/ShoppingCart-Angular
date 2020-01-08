@@ -1,0 +1,57 @@
+td{
+    width:20%; 
+    /* color: ; */
+    font-size: 2em;
+    height: 70px;
+}
+
+#td1
+{
+    padding-left: 100px;
+   
+}
+
+#image
+{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+/* div{
+    
+   
+    /* margin-top: 100px; */
+    /* background-color: black; */
+
+
+body
+{
+    background-color:rgb(196, 224, 236);
+    height: 100vh;
+}
+tbody{
+    
+    margin: 500px;
+    border: 1px solid black;
+   
+}
+
+div{
+    margin-left: 500px;
+    margin-right: 200px;
+}
+
+table{
+    margin-top: 50px;
+}
+
+
+/* tr{
+   
+} */
+/* 
+#s1{
+    height:100vh;
+    background-size:100% ;
+    background-repeat: no-repeat;
+} */

@@ -1,0 +1,38 @@
+
+    <div style="float: left;">
+        <img id="image" [src]="fetchimage(wDress.image)" style=" margin-left: 150px; margin-top:70px; height: 70vh;">
+    </div>
+
+    <div id="part2" style="float: right;">
+        <div id="desc">
+
+            <p>{{wDress.description}}</p>
+            <p>M.R.P. : <del>&#8377;{{wDress.price}}</del></p>
+            <p>Discount : {{wDress.discount}}%</p>
+            <div style="color: red; font-weight: bold; font-size:4em ;"> <span style="color: black;">Price :
+                </span>&#8377; {{wDress.discountedAmount}}</div>
+
+        </div>
+        <form [formGroup]="Quantity" >
+            <div id="quantity">
+                <h3>Select Quantity <select formControlName="quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select></h3>
+            </div>
+                <!-- <input type="button" onclick="add()" value="AddtoCart"> -->
+                <button (click)=addToCart() class="btn btn-warning btn-lg" style="font-size: 2em;">
+                        <span class="fa fa-shopping-cart"></span>  Add To Cart</button>
+
+
+            <!-- <button onclick="addToCart()" class="btn btn-warning btn-lg" >
+                <span class="fa fa-shopping-cart"></span> Add to Cart </button>-->
+
+            <button routerLink="/buyNow" class="btn btn-warning btn-lg"style="font-size: 2em;">
+                <span class="fa fa-ravelry"></span> Buy Now </button> 
+
+        </form>
+    </div>

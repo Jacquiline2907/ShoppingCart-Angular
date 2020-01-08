@@ -1,0 +1,38 @@
+<body id="s1" style=" background-image: url('/assets/image/hai.jpg'); background-repeat: no-repeat; background-size:contain;
+    background-color:rgb(196, 224, 236)">
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a routerLink="login" class="nav-link shadow ">Login</a>
+        <a routerLink="registration" class="nav-link shadow ">Registration</a>
+
+    </div>
+
+
+    <span style="font-size:30px;cursor:pointer; margin-left: 10px; font: Bauhaus 93; color: aliceblue; float: left; "
+        onclick="openNav()">&#9776;
+    </span>
+    <img src="../assets/image/icon.png" style="height: 50px; width: 140px;">
+
+
+    <div style="float: right; font-size: 2em; font-weight: bold;">
+        <button type="button" style="background-color: transparent;" (click)="login()">
+            <span class="glyphicon glyphicon-log-in" ></span> Log in
+        </button>
+        <button type="button" style="background-color: transparent;" (click)="signup()">
+            <span class="fa fa-bolt"></span> Signup
+        </button>
+        <button type="button" style="background-color: transparent;" (click)="aboutus()">
+                <span class="fa fa-question-circle"></span> About Us
+            </button>
+    </div>
+    <br>
+    <p style="margin-top: 90px; float: right;font-size: 7em; font-family: cursive; font-style: oblique;">Shop With Us</p>
+
+
+
+    <!-- <div style="float: right; margin-right:50px; "> </div> -->
+
+
+    <router-outlet></router-outlet>
+</body>

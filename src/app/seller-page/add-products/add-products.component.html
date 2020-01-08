@@ -1,0 +1,92 @@
+<body id="s1"
+    style=" height: max-content; background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(90, 232, 236)); ">
+    <!-- id="s1"
+    style=" background-image: url('/assets/image/bg44.jpg'); background-repeat: no-repeat; background-size:cover;" -->
+
+    <div class="container">
+        <form [formGroup]="productForm" (ngSubmit)="AddProduct()" style="font-weight: bold;margin:0px 30px;">
+
+            <div class="row">
+                <label for="category" class="col-sm-3 col-form-label">Choose Category</label>
+                <div class="col-sm-5" style="font-size: 2em;">
+                    <input class="form-contol" type="radio" formControlName="SectionKey" value=1> <a
+                        style="font-size: 1em;">Womens Fashion</a><br>
+                    <input class="form-contol" type="radio" formControlName="SectionKey" value=2> Mens Fashion<br>
+                    <input class="form-contol" type="radio" formControlName="SectionKey" value=3> Kids Fashion<br>
+                    <input class="form-contol" type="radio" formControlName="SectionKey" value=4> Electronics<br>
+                    <input class="form-contol" type="radio" formControlName="SectionKey" value=5> Home and
+                    Furniture<br>
+                    <input class="form-contol" type="radio" formControlName="SectionKey" value=6> TVs and Appliances
+                </div>
+            </div>
+
+
+            <div class="row">
+                <label for="firstName" class="col-sm-3 col-form-label">Name</label>
+                <div class="col-sm-3">
+                    <input class="form-contol" formControlName="Name" type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="lastName" class="col-sm-3 col-form-label">Description</label>
+                <div class="col-sm-3">
+                    <input class="form-contol" formControlName="Description" type="text">
+                </div>
+            </div>
+
+            <div class="row">
+                <span class="col-sm-3 col-form-label" style="font-size: 15pt;">Product Image</span>
+                <input class="col-sm-3" id="image" type="file" accept="image/*" (change)=insertImage($event) />
+            </div>
+
+            <div class="row">
+                <label for="email" class="col-sm-3 col-form-label">Price</label>
+                <div class="col-sm-3">
+                    <input class="form-contol" formControlName="Price" type="number">
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="phnnum" class="col-sm-3 col-form-label">Discount</label>
+                <div class="col-sm-3">
+                    <input class="form-contol" formControlName="Discount" type="number">
+                </div>
+            </div>
+
+            <div class="row">
+                <label for="password" class="col-sm-3 col-form-label">Stock</label>
+                <div class="col-sm-3">
+                    <input class="form-contol" formControlName="Stock" type="number">
+                </div>
+            </div>
+
+            <input type="submit" value="submit" data-toggle="modal" data-target="#myModal"
+                style="background-color: transparent; font-size: 2em; margin-left: 450px; border-radius: 10%;">
+
+            <button routerLink="/sellerPage" > Go Back</button>
+
+        </form>
+    </div>
+    <!-- Trigger the modal with a button -->
+    <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+               
+                <div class="modal-body">
+                    <!-- <span class="glyphicon glyphicon-ok" style="color: green; width: 50px;"></span><a>Products Added</a> -->
+                    <p style="font-size: 3em;"><img src="../assets/image/tick.jpg" style="background-size: contain;">Products Added</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info" data-dismiss="modal" style="width: 50px; font-size: 20pt;" (click)="refresh()" >Ok</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>

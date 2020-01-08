@@ -1,0 +1,33 @@
+p{
+   
+    font-size: 3em;
+    font-weight: bold;
+}
+#desc{
+    border: 1px solid transparent;
+    /* float: left; */
+    margin-top: 90px;
+    margin-left: 50px;
+    /* padding: 50px; */
+}
+button{
+    margin: 0px 40px;
+    margin-top: 80px;
+    padding : 10px 80px;
+   
+}
+
+#part2
+{
+    margin-right: 30px;
+}
+
+#quantity
+{
+    margin-left: 190px;
+    margin-top: 40px;
+}
+
+select{
+    padding:0px 60px;
+}

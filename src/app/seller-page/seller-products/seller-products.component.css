@@ -1,0 +1,31 @@
+
+#s1{
+    height:100vh;
+   
+    background-repeat: no-repeat;
+}
+
+div{
+    margin-left: 400px;
+    /* margin-top: 100px; */
+}
+body .container {
+    padding-top: 80px;
+    /* padding-left: 70px; */
+} 
+
+#product{
+    width: 300px;
+    height: 70px;
+    font-size: 2em;
+    margin: 20px; 
+    font-weight: bold;  
+}
+
+#nav{
+    width: 100px;
+    height: 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 10px;
+}

@@ -1,0 +1,57 @@
+
+<!-- <div>
+    <div id=row1>
+        <div class="row">
+            <div class="col-3" style="border: 1px solid black;">
+                <img class="img-responsive" src="../assets/image/dress/dress1.jpg">
+                <p style="text-align: center; font-weight: bold;"><br> Round Neck Half Sleeve T-shirt </p>
+                <h4 style="text-align: center; color:red;">&#8377;499</h4>
+            </div>
+            <div class="col-3" style="border: 1px solid black;">
+                <img class="img-responsive" src="../assets/image/dress/d2.jpg">
+            </div>
+            <div class="col-3" style="border: 1px solid black;">
+                <img class="img-responsive" src="../assets/image/dress/d3.jpg">
+            </div>
+            <div class="col-3" style="border: 1px solid black;">
+                <img class="img-responsive" src="../assets/image/dress/d4.jpg">
+            </div>
+        </div>
+    </div>
+
+    <div id=row2>
+        <div class="row">
+            <div class="col-3">
+                <img class="img-responsive" src="../assets/image/dress/d5.jpg">
+            </div>
+            <div class="col-3">
+                <img class="img-responsive" src="../assets/image/dress/d6.jpg">
+            </div>
+            <div class="col-3">
+                <img class="img-responsive" src="../assets/image/dress/d7.jpg">
+            </div>
+            <div class="col-3">
+                <img class="img-responsive" src="../assets/image/dress/d8.jpg">
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="row">
+
+
+    <div class="col-4" style="border: 1px solid black;" *ngFor="let data of wFashion;let i=index">
+        <div (click) =  "display(i)" style="margin-left: 30px;">
+                <div class="col-12"> <img [src]="fetchimage(data.image)" /> </div>
+        
+                <p style="font-weight: bold;"> {{data.description}}</p>
+                
+                <p>M.R.P. : <del>&#8377;{{data.price}}</del></p>
+                <p style="font-weight: bold;">Discount : {{data.discount}}%</p>
+              <div style="color: red; font-weight: bold; font-size:2em ;">  <span style="color: black;">Price : </span>&#8377; {{data.discountedAmount}}</div>
+            
+        </div>
+       
+    </div>
+
+</div>
